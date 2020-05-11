@@ -124,5 +124,8 @@ for i in range(len(tokens)):
             
         elif token.getString() == "FACT":
             stack.append(int(math.factorial(stack.pop())))
+         
+        elif token.getString() == "NEGATE":
+            stack.append(stack.pop() * -1)
 
     i += 1  # go to the next token
